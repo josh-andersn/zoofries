@@ -1,0 +1,294 @@
+/* Primary color #cf6468 */
+/* Secondary color #232323 */
+/* Background color #f8f3e8 */
+/* Accent Background color #ebdcbc */
+
+
+
+body {
+  margin: 0;
+  background-color: #f8f3e8
+}
+
+.ancor_with_no_decoration {
+  text-decoration: none;
+}
+
+.heading5 {
+  color: #cf6468;
+  font-family: OpenSans;
+  font-size: 20pt;
+  letter-spacing: 1
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+iframe {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 5%;
+}
+
+
+
+
+
+
+/* ::::::: HEADER ::::::: */
+
+.header {
+  background-image: url(../images/d_overlay.jpg);
+  background-position: center;
+  height: 100%;
+  background-attachment: fixed;
+  padding-top: 12%;
+  max-height: 85%;
+  text-align: center;
+}
+
+.sub_grand_title {
+  font-size: 15pt;
+  text-align: center;
+  font-family: OpenSans;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #cf6468;
+  margin-bottom: -5px;
+}
+
+.line {
+  margin-top: 3.5%;
+  margin-bottom: -3.5%;
+}
+
+.grand_title {
+  font-size: 100pt;
+  text-align: center;
+  font-family: Merriweather;
+  font-weight: 200;;
+  letter-spacing: 3px;
+  color: #f8f3e8;
+}
+
+/* ::::::: ILLUSTRATION ::::::: */
+
+
+.illustration {
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5%;
+  text-align: center;
+}
+
+.illustration_header {
+  font-size: 72pt;
+  font-family: OpenSans;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #cf6468;
+  margin-top: 0px;
+}
+
+/*.illustration_text {
+  font-size: 16pt;
+  font-family: Merriweather;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #232323;
+  margin-top: 0px;
+  width: 50%;
+}*/
+
+.preveiw_gallery {
+  width: 100;
+  text-align: center;
+}
+
+.images {
+  text-align: center;
+}
+
+.preview_img {
+  width: 25%;
+  border-radius: 10px;
+  margin: 3%;
+}
+
+.see_more {
+  text-align: -webkit-center;
+}
+
+.swap_button {
+  background-image: url(../images/button_2.png);
+  width: 238px;
+  height: 66px;
+  transition: 0.3s;
+}
+
+.swap_button:hover {
+  background-image: url(../images/button_1.png);
+  transform: scale(1.03);
+}
+.swap_button:active {
+  background-image: url(../images/button_2.png);
+  transform: scale(0.97);
+}
+
+/* ::::::: ANIMATION ::::::: */
+
+
+
+.animation {
+  background-image: url(../images/e_overlay.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5%;
+  height: 80%;
+  display: -webkit-box;
+}
+
+.animation_left_collum {
+ flex: 1;
+ width: 50%;
+}
+
+.animation_header {
+  font-size: 72pt;
+  font-family: OpenSans;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color:#f8f3e8;
+  margin-top: 0px;
+}
+
+.animation_right_collum {
+  flex: 2;
+  margin-left: 5%;
+  text-align: center;
+  width: 40%;
+}
+
+.youtube_icon {
+  width: 45%;
+  text-align: center;
+  transition: 0.3s;
+}
+.youtube_icon:hover {
+  transform: scale(1.05);
+}
+
+.icon_text {
+  vertical-align: top;
+  margin-left: 3%;
+  line-height: 1.5
+}
+
+.animation_youtube_header_link {
+  font-size: 28pt;
+  font-family: OpenSans;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #cf6468;
+  margin-top: 0px;
+  transition: 0.3s;
+  line-height: 2;
+}
+
+.animation_youtube_header_link:hover {
+  color: #ebdcbc;
+}
+
+.animation_youtube_text {
+  font-size: 16pt;
+  font-family: Merriweather;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #f8f3e8;
+  line-height: 1.5;
+}
+
+
+/* ::::::: BIO ::::::: */
+
+
+
+.bio {
+  background-image: url(../images/onDaPhone.gif);
+  background-position: 770px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: contain;
+  background-attachment: fixed;
+  padding: 5%;
+  height: 80%;
+}
+
+.bio_header {
+  font-size: 72pt;
+  font-family: OpenSans;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #cf6468;
+  margin-top: 0px;
+
+
+}
+
+.bio_text {
+  font-size: 21pt;
+  font-family: Merriweather;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #232323;
+  line-height: 1.5;
+
+}
+
+/* ::::::: FOOTER ::::::: */
+
+
+.footer {
+ background-color: #232323;
+ padding: 5%;
+ text-align: center;
+}
+
+.footer_email_adress {
+  text-align: center;
+  font-size: 55pt;
+  font-family: josefinSans;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #cf6468;
+  margin-top: 5%;
+}
+
+.social_button_twwiter {
+  width: 7%;
+  margin: 0 5% 0 5%;
+  transition: 0.3s;
+}
+.social_button_instaram {
+  width: 7%;
+  margin: 0 5% 0 5%;
+  transition: 0.3s;
+}
+
+
+.social_button_twwiter:hover {
+  transform: scale(1.1);
+}
+.social_button_instaram:hover {
+  transform: scale(1.1);
+}
