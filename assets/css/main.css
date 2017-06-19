@@ -4,18 +4,15 @@
 /* Accent Background color #ebdcbc */
 
 
+
+
 @font-face {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Merriweather', serif;
-  font-family: 'Josefin Sans', sans-serif;
-
-
-  src: local('Merriweather'),
-    url(../fonts/Merriweather/Merriweather-Regular.ttf) format('truetype');
-  src: local('JoesfinSans'),
-    url(../fonts/Josefin_Sans/JosefinSans-Light.ttf) format('truetype');
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf); /* For IE6-8 */
   src: local('OpenSans'),
-    url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+       url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
 }
 
 
