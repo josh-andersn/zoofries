@@ -6,8 +6,16 @@
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('TrueType'),
+        /*url('myfont.woff') format('woff');*/
+}
+@font-face {
+  font-family: 'Merriweather';
+  src:  url('../fonts/Merriweather/Merriweather-Regular.ttf') format('TrueType'),
+        /*url('myfont.woff') format('woff');*/
+}
 
 body {
   margin: 0;
