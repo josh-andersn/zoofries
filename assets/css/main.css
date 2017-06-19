@@ -7,12 +7,9 @@
 
 
 @font-face {
-  font-family: 'OpenSans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf); /* For IE6-8 */
-  src: local('OpenSans'),
-       url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+    font-family: OpenSans;
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;
 }
 
 
