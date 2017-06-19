@@ -11,8 +11,8 @@ var illustrations = [
   'f',
   'g',
   'h',
-  'i',
-  'j'
+  'i'
+  
 ];
 
 // run thru all the illustrations
@@ -25,22 +25,22 @@ for (var i = 0; i < illustrations.length; i++) {
   imgTag.id = 'myImg_' + illustration + '_' + i;
   imgTag.className = 'illustration';
 
-  // add the onclick event
-  imgTag.onclick = function(){
-      modal.style.display = "block";
-      var modalImg = document.getElementById('modalImage');
-      modalImg.src = this.src;
-  }
+  // // add the onclick event
+  // imgTag.onclick = function(){
+  //     modal.style.display = "block";
+  //     var modalImg = document.getElementById('modalImage');
+  //     modalImg.src = this.src;
+  // }
 
   // append it to pops
   document.getElementById('pops').appendChild(imgTag);
 }
 
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+//
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }

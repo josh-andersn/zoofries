@@ -19,6 +19,40 @@ body {
   font-family: OpenSans;
   font-size: 20pt;
   letter-spacing: 1
+
+}
+
+.nav {
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 15px 5% 15px 5%;
+  position: fixed;
+  width: 90%;
+  z-index: 100;
+}
+
+.nav_title {
+  color: #cf6468;
+  font-family: OpenSans;
+  font-size: 1.6em;
+  letter-spacing: 1;
+  margin: 0;
+  float: left;
+}
+
+.nav_links {
+  margin-top: 0.47em;
+  float: right;
+}
+
+.nav_link {
+  float: left;
+  color: #cf6468;
+  font-family: OpenSans;
+  font-size: 1.1em;
+  letter-spacing: 1;
+  display: inline;
+  margin: 0 1em 0 1em;
+  text-decoration: none;
 }
 
 h1 {
@@ -42,22 +76,24 @@ iframe {
 
 
 
+/* ----------------- HOME PAGE ----------------- */
 
 
 /* ::::::: HEADER ::::::: */
 
 .header {
   background-image: url(../images/d_overlay.jpg);
+  background-size: cover;
   background-position: center;
   height: 100%;
   background-attachment: fixed;
-  padding-top: 12%;
+  padding-top: 20%;
   max-height: 85%;
   text-align: center;
 }
 
 .sub_grand_title {
-  font-size: 15pt;
+  font-size: 1.3em;
   text-align: center;
   font-family: OpenSans;
   font-weight: lighter;
@@ -66,13 +102,16 @@ iframe {
   margin-bottom: -5px;
 }
 
-.line {
-  margin-top: 3.5%;
-  margin-bottom: -3.5%;
+hr {
+  margin-top: 4%;
+  width: 50px;
+  margin-bottom: -5%;
+  color: #cf6468;
+  border-style: solid;
 }
 
 .grand_title {
-  font-size: 100pt;
+  font-size: 8.5em;
   text-align: center;
   font-family: Merriweather;
   font-weight: 200;;
@@ -83,16 +122,17 @@ iframe {
 /* ::::::: ILLUSTRATION ::::::: */
 
 
-.illustration {
+.illustrations {
   background-image: url(../images/background.png);
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   padding: 5%;
   text-align: center;
 }
 
 .illustration_header {
-  font-size: 72pt;
+  font-size: 7em;
   font-family: OpenSans;
   font-weight: 600;
   letter-spacing: 2px;
@@ -153,6 +193,7 @@ iframe {
   background-image: url(../images/e_overlay.jpg);
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   padding: 5%;
   height: 80%;
   display: -webkit-box;
@@ -195,7 +236,7 @@ iframe {
 }
 
 .animation_youtube_header_link {
-  font-size: 28pt;
+  font-size: 3em;
   font-family: OpenSans;
   font-weight: 600;
   letter-spacing: 2px;
@@ -210,7 +251,7 @@ iframe {
 }
 
 .animation_youtube_text {
-  font-size: 16pt;
+  font-size: 1.5em;
   font-family: Merriweather;
   font-weight: lighter;
   letter-spacing: 2px;
@@ -224,11 +265,12 @@ iframe {
 
 
 .bio {
-  background-image: url(../images/onDaPhone.gif);
-  background-position: 770px;
+  background-image: url(../images/c_overlay.jpg);
+  /*background-position: 738px 0;*/
   background-repeat: no-repeat;
   background-color: #ffffff;
-  background-size: contain;
+  /*background-size: 80%;*/
+  background-size: cover;
   background-attachment: fixed;
   padding: 5%;
   height: 80%;
@@ -250,7 +292,7 @@ iframe {
   font-family: Merriweather;
   font-weight: lighter;
   letter-spacing: 2px;
-  color: #232323;
+  color: #f8f3e8;
   line-height: 1.5;
 
 }
@@ -291,4 +333,389 @@ iframe {
 }
 .social_button_instaram:hover {
   transform: scale(1.1);
+}
+
+
+/* ----------------- GALLERY ----------------- */
+
+
+.gallery {
+  background-image: url(../images/background.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.gallery_content {
+}
+
+.gallery_illustrations {
+}
+
+.illustration {
+  width: 70%;
+  margin: 5%;
+  margin-top: 7.5%;
+}
+
+.sidebar {
+  position: fixed;
+  margin-left: 75%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.sidebar_icon {
+  width: 20%;
+  margin: 10%;
+  transition: 0.3s;
+}
+
+.sidebar_icon:hover {
+  transform: scale(1.1);
+}
+
+
+/* ::::::::::::::::::::::::::  SCREEN CALIBRATION  :::::::::::::::::::::   */
+
+/* LARGE LAPTOPS */
+
+@media only screen and (max-width: 1440px){
+
+  .header {
+    padding-top: 13%;
+
+  }
+
+}
+
+
+
+
+/* SMALL LAPTOPS */
+
+@media only screen and (max-width: 1024px){
+
+  .animation_youtube_text {
+    font-size: 1em;
+  }
+
+  .animation_youtube_header_link {
+    font-size: 2em;
+  }
+
+  iframe {
+    width: 110%;
+    height: 55%;
+  }
+
+  .animation_header {
+    font-size: 62pt;
+  }
+
+  .animation {
+      height: 60%;
+  }
+
+  .animation_left_collum {
+    width: 55%;
+  }
+
+  .header {
+    padding-top: 23%;
+    max-height: 73%;
+  }
+
+  .bio {
+    /* activate when ready */
+    /*background-position: 570px 0;*/
+    height: 60%;
+  }
+
+}
+
+/* TABLETS */
+
+@media only screen and (max-width: 768px){
+
+  .sidebar {
+    margin-left: 75%;
+    margin-top: 20%;
+    text-align: -webkit-center;
+    display: grid;
+  }
+
+  .sidebar_icon {
+    width: 50%;
+  }
+
+  .header {
+    padding-top: 23%;
+    max-height: 73%;
+  }
+
+  .grand_title {
+    font-size: 7em;
+  }
+
+  .sub_grand_title {
+      font-size: 1em;
+  }
+
+  .illustration_header {
+    font-size: 4em;
+  }
+
+  .swap_button {
+    transform: scale(0.75);
+  }
+
+  .swap_button:active {
+    transform: scale(0.5);
+  }
+
+  .swap_button:hover {
+    transform: scale(0.85);
+  }
+
+  .animation_header {
+    font-size: 4em;
+  }
+
+  .animation_youtube_header_link {
+    font-size: 2em;
+  }
+
+  .animation_right_collum {
+    width: 45%;
+  }
+
+  .bio_header {
+    font-size: 4em;
+  }
+
+  .bio_text {
+    font-size: 1.2em;
+  }
+
+  .bio {
+    /* activate when ready */
+    /*background-position: 400px 0;*/
+  }
+
+  .footer_email_adress {
+    text-align: center;
+    font-size: 3.6em;
+    font-family: josefinSans;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #cf6468;
+    margin-top: 5%;
+  }
+
+  .social_button_twwiter {
+    width: 10%;
+  }
+
+  .social_button_instaram {
+    width: 10%;
+  }
+
+}
+
+
+/* Large Moble Screens */
+
+@media only screen and (max-width: 425px){
+
+
+  .nav_title {
+    font-size: 1.5em;
+  }
+
+  .nav_link {
+      font-size: 1em;
+  }
+
+
+  .nav {
+    width: 93%;
+  }
+
+  .header {
+    width: 129%;
+    padding-top: 37%;
+    max-height: 59%;
+
+  }
+
+  .sub_grand_title {
+    font-size: 1em;
+  }
+
+  .grand_title {
+    font-size: 5em;
+  }
+
+  .illustrations {
+    width: 119%;
+  }
+
+  .illustration_header {
+    font-size: 3em;
+  }
+
+  .animation {
+    width: 119%;
+    height: 50%
+  }
+
+  .animation_header {
+    font-size: 2.5em;
+  }
+
+  .animation_youtube_header_link {
+    font-size: 1em;
+  }
+
+  .animation_left_collum {
+    width: 56%;
+  }
+
+  iframe {
+    height: 60%;
+  }
+
+  .animation_right_collum {
+    width: 43%;
+  }
+
+  .youtube_icon {
+    width: 60%;
+  }
+
+  .animation_youtube_text {
+    font-size: 0.6em;
+  }
+
+  .bio {
+    /* activate when ready */
+    /*background-position: 275px 270px;*/
+    width: 119%;
+    height: 40%;
+  }
+
+  .bio_header {
+      font-size: 2.5em;
+  }
+
+  .bio_text {
+    font-size: 0.8em;
+  }
+
+  .footer {
+      width: 119%;
+  }
+
+  .footer_email_adress {
+      font-size: 2.6em;
+  }
+
+  .social_button_twwiter {
+    width: 9%;
+  }
+
+  .social_button_instaram {
+    width: 9%;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+
+  .nav_title {
+    font-size: 1.2em;
+
+  }
+
+  .nav_link {
+      font-size: 0.7em;
+      margin: 0 0.5em 0 1em
+  }
+
+  .bio {
+    /* activate when ready */
+    /*background-position: 255px 300px;*/
+  }
+
+  .bio_text {
+    font-size: 0.7em;
+  }
+
+  .nav_title {
+    font-size: 1.5em;
+
+  }
+
+  .nav_link {
+    font-size: 1em;
+
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+
+  iframe {
+    height: 50%;
+  }
+
+  .animation_youtube_text {
+    font-size: 7px;
+  }
+
+  .animation {
+      height: 40%;
+  }
+
+  .bio {
+    /* activate when ready */
+    /*background-position: 225px 335px;*/
+  }
+
+  .bio_text {
+      font-size: 0.6em;
+  }
+
+  .bio_header {
+      font-size: 2.2em;
+  }
+
+  .animation_header {
+      font-size: 2.2em;
+  }
+
+  .illustration_header {
+      font-size: 2.2em;
+  }
+
+  .footer_email_adress {
+      font-size: 2.2em;
+  }
+
+  .nav_title {
+      font-size: 1em;
+  }
+
+  .nav_links {
+    margin-top: 0.3em;
+  }
+
+  .nav_link {
+    font-size: 0.7em;
+  }
+
+
+
+
+
 }
