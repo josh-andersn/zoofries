@@ -6,11 +6,7 @@
 
 
 
-@font-face {
-    font-family: OpenSans;
-    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
-    font-weight:400;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
 body {
