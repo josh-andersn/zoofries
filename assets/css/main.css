@@ -9,14 +9,7 @@
 @font-face {
   font-family: 'Open Sans';
   src:  url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('TrueType'),
-        /*url('myfont.woff') format('woff');*/
 }
-@font-face {
-  font-family: 'Merriweather';
-  src:  url('../fonts/Merriweather/Merriweather-Regular.ttf') format('TrueType'),
-        /*url('myfont.woff') format('woff');*/
-}
-
 body {
   margin: 0;
   background-color: #f8f3e8
@@ -117,7 +110,7 @@ iframe {
 hr {
   margin-top: 4%;
   width: 50px;
-  margin-bottom: -5%;
+  margin-bottom: -5.4%;
   color: #cf6468;
   border-style: solid;
 }
@@ -125,8 +118,8 @@ hr {
 .grand_title {
   font-size: 8.5em;
   text-align: center;
-  font-family: Merriweather;
-  font-weight: 200;;
+  font-family: Open Sans;
+  font-weight: 400;
   letter-spacing: 3px;
   color: #f8f3e8;
 }
@@ -288,6 +281,12 @@ hr {
   height: 80%;
 }
 
+.bio {
+    background-image: url(../../bio_bg_2.gif);
+    background-position: 860px -70px;
+    background-size: contain;
+}
+
 .bio_header {
   font-size: 72pt;
   font-family: Open Sans;
@@ -304,7 +303,7 @@ hr {
   font-family: Merriweather;
   font-weight: lighter;
   letter-spacing: 2px;
-  color: #f8f3e8;
+  color: #232323;
   line-height: 1.5;
 
 }
