@@ -10,6 +10,7 @@
   font-family: 'Open Sans';
   src:  url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('TrueType'),
 }
+
 body {
   margin: 0;
   background-color: #f8f3e8
@@ -320,7 +321,7 @@ hr {
 .footer_email_adress {
   text-align: center;
   font-size: 55pt;
-  font-family: josefinSans;
+  font-family: Open Sans;
   font-weight: lighter;
   letter-spacing: 2px;
   color: #cf6468;
