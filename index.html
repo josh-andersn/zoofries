@@ -2,25 +2,60 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="Animation,Illustration,Isaac,Anderson,Isaac Anderson">
     <meta name="author" content="Sudojo">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
 
   </head>
+  <title>Zoofries</title>
   <body>
 
     <div class='nav'>
       <h2 class='nav_title'>Zoofries</h2>
 
       <div class='nav_links'>
-        <a href='index.html' class='nav_link'>
+        <a href='#home' class='nav_link'>
           HOME
         </a>
-
-        <a href='gallery.html' class='nav_link'>
-          GALLERY
+        <a href='#service' class='nav_link'>
+          SERVICE
+        </a>
+        <a href='#animation' class='nav_link'>
+          ANIMATION
+        </a>
+        <a href='#video' class='nav_link'>
+          VIDEO
+        </a>
+        <a href='#contact' class='nav_link'>
+          CONTACT
         </a>
       </div>
 
@@ -28,109 +63,193 @@
 
     <!-- ////// HEADER /////// -->
 
-    <div class='header'>
+    <div class='header' id=home>
 
       <h2 class='sub_grand_title'>
-        ANIMATION AND ILLUSTRATION
+        Zoofries
       </h2>
 
-      <hr>
+      <!-- <hr> -->
 
       <h1 class='grand_title'>
-        Zoofries
+         is a media production company that helps your business not only attract customers,
+         but create fans. We strive to find the best way to tell the story that’s unique
+         to you and your business.
       </h1>
 
-    </div>
-
-    <!-- ////// ILLUSTRATION /////// -->
-
-
-    <div class='illustrations'>
-
-      <h1 class='illustration_header'>
-        Illustration
-      </h1>
-
-
-      <!-- <p class='illustration_text'></p> -->
-
-      <div class='preview_gallery'>
-        <div class='images'>
-          <img src='assets/images/thumbnails/a_low_res.png' class='preview_img'>
-          <img src='assets/images/thumbnails/b_low_res.png' class='preview_img'>
-          <img src='assets/images/thumbnails/c_low_res.png' class='preview_img'>
-          <img src='assets/images/thumbnails/d_low_res.png' class='preview_img'>
-          <img src='assets/images/thumbnails/e_low_res.png' class='preview_img'>
-          <img src='assets/images/thumbnails/f_low_res.png' class='preview_img'>
-        </div>
-
+      <div class='into_buttons'>
         <div class='see_more'>
-          <a href='gallery.html'>
-            <div class='swap_button'></div>
+          <a href='#service'>
+            <div class='swap_button_learn'></div>
           </a>
         </div>
+        <div class='see_more'>
+          <a href='#contact'>
+            <div class='swap_button_contact'></div>
+          </a>
+        </div>
+      </div>
+  </div>
 
+
+    <!-- ////// SERVICES /////// -->
+
+
+    <div class='service' id=service>
+
+      <h1 class='service_header'>
+        Our Services
+      </h1>
+
+      <div class=the_services>
+
+
+        <div class=animation_service>
+          <img class='animation_img' src='assets/images/Animation.png'>
+          <h2 class=animation_s_heading>
+            Animation
+          </h2>
+          <p class=animation_s_paragraph>
+            Pencil Magic
+          </p>
+          <div class='see_more' id=yo>
+            <a href='#animation'>
+              <div class='swap_button_learn2'></div>
+            </a>
+          </div>
+        </div>
+
+        <div class=video_production_service>
+          <img class='video_img' src='assets/images/video.png'>
+          <h2 class=video_s_heading>
+            Video Production
+          </h2>
+          <p class=video_s_paragraph>
+            Camera magic
+          </p>
+          <div class='see_more' id=yo>
+            <a href='#video'>
+              <div class='swap_button_learn2'></div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- ////// ANIMATION /////// -->
 
 
-    <div class='animation'>
+    <div class='animation' id=animation>
+      <h1 class='animation_header' >
+        Animation
+      </h1>
+      <div class=collums>
 
+        <!-- :::::: ANIMATION LEFT COLLUM ::::::: -->
 
-      <!-- :::::: ANIMATION LEFT COLLUM ::::::: -->
-
-      <div class='animation_left_collum'>
-
-        <h1 class='animation_header'>
-          Animation
-        </h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_BUQcJ9wHmQ" frameborder="0" allowfullscreen></iframe>
-
-
-      </div>
-
-
-      <!-- :::::: ANIMATION RIGHT COLLUM ::::::: -->
-
-      <div class='animation_right_collum'>
-
-        <a href='https://www.youtube.com/user/zoofries'><img src='assets/images/ColorFries@2x.png' class='youtube_icon'></a>
-        <div class='icon_text'>
-          <a  href='https://www.youtube.com/user/zoofries' class='animation_youtube_header_link'>
-            Youtube
-          </a>
-          <br>
-          <p class='animation_youtube_text'>
-            Animation, Vloging, and <br>
-            whatever weird idea that <br>
-            pops into our heads finds <br>
-            a home here. Come on in.  <br>
-            Don’t bother wiping your <br>
-            feet. <br>
-          </p>
+        <div class='animation_left_collum'>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/UZ36NEXXBeE" frameborder="0" allowfullscreen></iframe>
         </div>
 
+        <!-- :::::: ANIMATION RIGHT COLLUM ::::::: -->
+
+        <div class='animation_right_collum'>
+          <!-- <a href='https://www.youtube.com/user/zoofries'><img src='assets/images/ColorFries@2x.png' class='youtube_icon'></a> -->
+          <div class='icon_text'>
+            <!-- <a  href='https://www.youtube.com/user/zoofries' class='animation_youtube_header_link'>
+              Zoofries Youtube
+            </a> -->
+            <br>
+            <p class='animation_youtube_text'>
+              Nothing can catch someone’s attention
+              quiet like an idea personified. A drawing
+              is just that. Zoofries strives to create
+              premier animation that’s full of heart and
+              soul.
+            </p>
+          </div>
+        </div>
       </div>
-
-
     </div>
 
-    <!-- ////// BIOGRAPHY /////// -->
+    <!-- //////// VEDIO PRODUCTION \\\\\\\\ -->
 
-    <div class='bio'>
+    <div class='video_production' id=video>
+      <h1 class='video_production_header' style='    font-size: 5em; font-family: Open sans; font-weight: bold; letter-spacing: 2px; color: #ffffff; margin-bottom: 0.5em;'>
+        Video Production
+      </h1>
 
-      <h1 class='bio_header'>Biography</h1>
-      <!-- <h1 class='bio_header'>Give Us A Call!</h1> -->
-      <p class='bio_text'>
-        Zoofries is the production company of <br>
-        Isaac Anderson. Specializingin the fun <br>
-        and the weird, we tell stories and vlog <br>
-        as we go. Follow us on Twitter and <br>
-        Instagram, and subscribe to our YouTube <br>
-        channel to follow the crazy.
-      </p>
+      <div class=collums>
+        <!-- :::::: ANIMATION LEFT COLLUM ::::::: -->
+
+        <div class='video_production_left_collum'>
+          <!-- <a href='https://www.youtube.com/user/zoofries'><img src='assets/images/ColorFries@2x.png' class='youtube_icon'></a> -->
+          <div class='v_icon_text'>
+            <!-- <a  href='https://www.youtube.com/user/zoofries' class='animation_youtube_header_link'>
+              Zoofries Youtube
+            </a> -->
+            <br>
+            <p class='video_production_youtube_text'>
+              Video posts preform better than<br>
+              any other format to attract customers<br>
+              to your brand, but we want to do even<br>
+              better. We create stories that put your<br>
+              business in the best possible light. We<br>
+              give you media you can be proud of.
+            </p>
+          </div>
+        </div>
+
+        <!-- :::::: ANIMATION RIGHT COLLUM ::::::: -->
+
+        <div class='video_productionn_right_collum'>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IhAvfiIZuZg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ////// Contact /////// -->
+
+    <div class='contact' id=contact>
+
+      <div class=contact_card>
+        <h1 class='contact_header'>
+          Contact us
+        </h1>
+        <p class='contact_text'>
+          Like Batman, we are poised ready<br>
+          to answer our red blinking phone.<br>
+          If you require video, animation,<br>
+          or art; we’re your huckleberry.
+        </p>
+
+
+        <div class='see_more'>
+          <a href="javascript:void( window.open( 'https://form.jotform.com/72955261784164', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">
+            <div class='swap_button_contact'></div>
+          </a>
+        </div>
+
+
+        <!-- <form method="POST" name="contactform" action="contact-form-handler.php">
+          <p>
+          <label for='name' class="lable">Your Name:</label> <br>
+          <input type="text" name="name">
+          </p>
+          <p>
+          <label for='email' class="lable">Email Address:</label> <br>
+          <input type="text" name="email"> <br>
+          </p>
+          <p>
+          <label for='message' class="lable">Message:</label> <br>
+          <textarea name="message"></textarea>
+          </p>
+          <input type="submit" value="Submit" class=submitten><br>
+        </form> -->
+      </div>
 
     </div>
 
@@ -140,18 +259,23 @@
     <div class='footer'>
 
       <a href='https://www.instagram.com/zoofries/' class='ancor_with_no_decoration'>
-        <img src='assets/images/instagramIcon.png' class='social_button_twwiter'>
+        <img src='assets/images/instagramIcon.png' class='social_button'>
       </a> <!-- Instagram Link -->
 
       <a href='https://twitter.com/zoofries' class='ancor_with_no_decoration'>
-        <img src='assets/images/twitterIcon.png' class='social_button_instaram'>
+        <img src='assets/images/twitterIcon.png' class='social_button'>
       </a> <!-- Twitter Link -->
 
-      <h2 class='footer_email_adress'>isaac@zoofries.com</h2>
+      <a href='https://youtube.com/zoofries' class='ancor_with_no_decoration'>
+        <img src='assets/images/youtubew.png' class='social_button'>
+      </a> <!-- Twitter Link -->
 
-
+      <a href='https://facebook.com/zoofries' class='ancor_with_no_decoration'>
+        <img src='assets/images/facebookw.png' class='social_button'>
+      </a> <!-- Twitter Link -->
 
     </div>
+
 
 
   </body>
