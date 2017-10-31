@@ -14,6 +14,8 @@
 body {
   margin: 0;
   background-color: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 .ancor_with_no_decoration {
@@ -30,23 +32,23 @@ body {
 
 .nav {
   background-color: rgba(25, 30, 36, 0.5);
-  padding: 15px 5% 15px 8%;
+  padding: 1em 5em 1em 5em;
   position: fixed;
-  width: 87%;
+  width: 94%;
   z-index: 100;
 }
 
 .nav_title {
   color: #CBFFFB;
   font-family: Open Sans;
-  font-size: 1.4em;
+  font-size: 2em;
   letter-spacing: 1;
   margin: 0;
   float: left;
 }
 
 .nav_links {
-  margin-top: 0.54em;
+  margin-top: 0.6em;
   float: right;
 }
 
@@ -54,7 +56,7 @@ body {
   float: left;
   color: rgba(203, 255, 251, 0.5);
   font-family: Open Sans;
-  font-size: 0.9em;
+  font-size: 1.3em;
   letter-spacing: 1;
   display: inline;
   margin: 0 2em 0 2em;
@@ -115,30 +117,10 @@ textarea {
   max-height: 100%;
 }
 
-.lable {
-
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
 iframe {
-  width: 110%;
+  width: 100%;
   height: 60%;
-  /*margin-bottom: 5%;*/
 }
-
-
-
 
 /* ----------------- HOME PAGE ----------------- */
 
@@ -147,19 +129,16 @@ iframe {
 
 .header {
   background-image: url(../images/a.jpg);
-  background-size: cover;;
-  /*background-position: center;;*/
-  height: 75%;
+  background-size: cover;
+  height: 45%;
   background-attachment: fixed;
-  padding-top: 15%;
-  max-height: 85%;
-  text-align: center;
+  padding: 15% 5em;
+  text-align: -webkit-center;
 }
 
 .sub_grand_title {
-  font-size: 5em;
-  text-align: LEFT;
-  margin-left: 8%;
+  font-size: 8em;
+  text-align: center;
   margin-top: 0;
   font-family: Open sans;
   font-weight: bold;
@@ -177,10 +156,10 @@ hr {
 }
 
 .grand_title {
+  margin: 1em;
   font-size: 3em;
-  width: 55%;
-  margin-left: 8%;
-  text-align: left;
+  width: 50%;
+  text-align: center;
   font-family: Open Sans;
   font-weight: 400;
   letter-spacing: 3px;
@@ -189,8 +168,7 @@ hr {
 
 .into_buttons {
   display: -webkit-inline-box;
-  float: left;
-  margin-left: 5.3%;
+
 }
 
 
@@ -346,9 +324,9 @@ hr {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 1em 8% 8% 8%;
+  padding: 2em 8em 2em 8%;
   text-align: center;
-  height: 80%;
+  height: 70%;
   /*display: flex;*/
 }
 
@@ -363,18 +341,20 @@ hr {
 
 .collums {
   display: flex;
+  max-height: 60%;
 }
 
 .animation_left_collum {
- flex: 2;
- width: 40%;
+  flex: 2;
+  height: 100%;
+  max-width: 50%;
 }
 
 .animation_right_collum {
   flex: 1;
-  margin-left: 5%;
   text-align: -webkit-center;
-  margin-top: 5em;
+  max-width: 100%;
+  max-height: 60%;
 }
 
 .youtube_icon {
@@ -414,10 +394,9 @@ hr {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 1em 8% 8% 8%;
+  padding: 2em 8% 2em 8%;
   text-align: center;
-  height: 80%;
-}
+  height: 70%;
 }
 
 .video_production_header {
@@ -425,21 +404,21 @@ hr {
   font-family: Open sans;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #191E24;
-  margin-bottom: 0em;
+  color: #ffffff;
+  margin-bottom: 1em;
 }
 
 .video_production_left_collum {
- flex: 1;
-
+  flex: 1;
+  max-width: 100%;
+  max-height: 60%;
 }
 
 .video_productionn_right_collum {
   flex: 2;
-  margin-left: 5%;
   text-align: center;
-  margin-top: 5em;
   height: 100%;
+  max-width: 50%;
 }
 
 .youtube_icon {
@@ -452,9 +431,7 @@ hr {
 }
 
 .v_icon_text {
-  vertical-align: top;
-  margin-left: 3%;
-  margin-top: 17.5em;
+  margin-top: 6.5em;
   line-height: 1.5;
   font-size: 0.9em;
 }
@@ -498,7 +475,7 @@ hr {
   background-size: cover;
   background-attachment: fixed;
   padding: 10em;
-  text-align: left;
+  text-align: center;
 
 }
 
@@ -517,7 +494,7 @@ hr {
   font-family: Open sans;
   font-weight: bold;
   letter-spacing: 2px;
-  color:  #191E24;
+  color:  #3EDFD7;
   margin-bottom: 0em;
 }
 
@@ -575,35 +552,56 @@ hr {
   .header {
     padding-top: 13%;
   }
-  .icon_text {
-    font-size: 0.7em;
-  }
   .v_icon_text {
-    font-size: 0.7em;
+        margin-top: 1.5em;
   }
+  .sub_grand_title {
+    font-size: 70pt;
+  }
+  .grand_title {
+    font-size: 25pt;
+  }
+  .service_header {
+    font-size: 4.5em;
+    margin-bottom: 0;
+  }
+  .icon_text {
+    margin-top: 1em;
+  }
+
 }
 
 @media only screen and (max-width: 1880px){
-
-  .v_icon_text {
-    margin-top: 12em;
-    font-size: 70%;
-  }
-
-  .icon_text {
-    font-size: 70%;
-    margin-top: 0;
-  }
 
   .grand_title {
     font-size: 270%;
     width: 70%;
   }
-
-  .into_buttons {
-
-    margin-left: 4%;
+  .sub_grand_title {
+    font-size: 60pt;
   }
+  .grand_title {
+    font-size: 20pt;
+    width: 50%;
+  }
+  .video_img {
+    width: 17em;
+  }
+  .video_s_paragraph {
+    font-size: 1.7em;
+    margin: auto;
+  }
+  .animation_img {
+    width: 17em;
+  }
+  .animation_s_paragraph {
+    font-size: 1.7em;
+    margin: auto;
+  }
+  #yo {
+    transform: scale(0.8);
+  }
+
 
 
 }
@@ -689,6 +687,7 @@ hr {
 /* SMALL LAPTOPS */
 
 @media only screen and (max-width: 1024px){
+
   .swap_button_learn {
     transform: scale(0.5);
   }
@@ -700,12 +699,13 @@ hr {
     font-size: 160%;
   }
 
-  .animation_youtube_text {
-    font-size: 1em;
+  .service_header {
+    font-size: 3em;
+    margin-bottom: 1em;
   }
 
-  .animation_youtube_header_link {
-    font-size: 2em;
+  .animation_header {
+    font-size: 2.5em;
   }
 
   iframe {
@@ -713,12 +713,18 @@ hr {
     height: 55%;
   }
 
-  .animation_header {
-    font-size: 62pt;
-  }
-
   .animation {
-      height: 60%;
+    height: 70%;
+    padding: 8%;
+    padding-top: 3%;
+  }
+  .video_production {
+    height: 70%;
+    padding: 8%;
+    padding-top: 3%;
+  }
+  .collums {
+    margin-right: 6%;
   }
 
   .animation_left_collum {
@@ -726,8 +732,21 @@ hr {
   }
 
   .header {
-    padding-top: 23%;
+    padding-top: 15%;
     max-height: 73%;
+  }
+
+  .animation_youtube_text {
+    font-size: 1em;
+    margin-top: -3em;
+  }
+
+  .video_production_youtube_text {
+    font-size: 1em;
+  }
+
+  .video_production_header {
+    font-size: 3em;
   }
 
   .animation_service {
@@ -755,34 +774,65 @@ hr {
     width: 10em;
   }
 
+  .contact_header {
+    font-size: 3em;
+  }
+  .contact_text {
+    font-size: 1.5em;
+  }
+  .contact {
+    height: 50%;
+    padding-top: 1.5em;
+  }
+
 }
 
 /* TABLETS */
 
 @media only screen and (max-width: 768px){
 
-  .sidebar {
-    margin-left: 75%;
-    margin-top: 20%;
-    text-align: -webkit-center;
-    display: grid;
-  }
-
   .sidebar_icon {
     width: 50%;
+  }
+  .nav_links {
+    margin-top: 0.45em;
+  }
+  .nav_link {
+    font-size: 0.6em;
+    margin: 0 2em 0 1em;
+  }
+  .nav_title {
+    font-size: 1em;
   }
 
   .header {
     padding-top: 23%;
     max-height: 73%;
+    width: 100%;
+    text-align: -webkit-center;
   }
 
   .grand_title {
-    font-size: 7em;
+    font-size: 1em;
+    text-align: -webkit-center;
+    margin: 0;
   }
 
   .sub_grand_title {
-      font-size: 1em;
+      font-size: 3em;
+      text-align: -webkit-center;
+  }
+
+  .service {
+    padding: 1em 0 1em 0;
+    overflow: hidden;
+  }
+  .into_buttons {
+    margin: 0;
+  }
+
+  .video_production_service {
+
   }
 
   .illustration_header {
