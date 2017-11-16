@@ -31,7 +31,7 @@ body {
 }
 
 .nav {
-  background-color: rgba(25, 30, 36, 0.5);
+  background-color: hsla(210, 47%, 06%, 0.5);
   padding: 1em 5em 1em 5em;
   position: fixed;
   width: 94%;
@@ -95,6 +95,19 @@ body {
   color: #fff;
   transform: scale(1.1);
 }
+.scrolldown {
+  display: none;
+}
+.mobile_sevices {
+  display: none;
+}
+
+.llogo {
+  display: none;
+
+}
+
+
 
 input {
   border-radius: 2em;
@@ -608,17 +621,46 @@ hr {
 
 @media only screen and (max-width: 1440px){
 
+
+  .nav {
+    padding: 0.7em 5em 0.7em 5em;
+  }
+  .nav_title {
+    font-size: 1.6em;
+  }
+  .nav_links {
+    margin-top: 0.5em;
+  }
+  .nav_link {
+    font-size: 1em;
+  }
+
+  .header {
+    padding-top: 20%;
+  }
+
   .swap_button_learn {
     transform: scale(0.5);
   }
   .swap_button_contact {
     transform: scale(0.5);
   }
-
-  .grand_title {
-    font-size: 160%;
-
+  .sub_grand_title {
+    font-size: 4em;
   }
+  .animation_header {
+    margin-bottom: 0.5em;
+  }
+  .animation_header {
+    font-size: 4em;
+  }
+  .video_production_header {
+        margin-bottom: 0.5em;
+  }
+  .video_production_header {
+        font-size: 4em;
+  }
+
 
   .video_img {
     width: 15em;
@@ -652,9 +694,6 @@ hr {
     margin: 0;
   }
 
-  .sub_grand_title {
-    font-size: 4em;
-  }
 
   .grand_title {
     font-size: 130%;
@@ -670,11 +709,15 @@ hr {
   }
 
   .into_buttons {
-    margin-left: 2%;
+    display: none;
+  }
+  .scrolldown {
+    display: block;
   }
 
   .contact {
-      height: 65%;
+    height: 60%;
+    padding-top: 3em;
   }
 
 
@@ -688,6 +731,23 @@ hr {
 
 @media only screen and (max-width: 1024px){
 
+  .nav {
+    width: 88%;
+  }
+  .nav_title {
+    font-size: 1.3em;
+  }
+  .nav_link {
+    font-size: 0.9em;
+  }
+  .nav_link {
+    margin: 0 1.2em;
+  }
+  .service_header {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+
   .swap_button_learn {
     transform: scale(0.5);
   }
@@ -696,16 +756,20 @@ hr {
   }
 
   .grand_title {
-    font-size: 160%;
+    font-size: 80%;
+    margin: 2em 0;
+  }
+  .sub_grand_title {
+    font-size: 3em;
   }
 
-  .service_header {
-    font-size: 3em;
-    margin-bottom: 1em;
+  .header {
+    padding-top: 16%;
   }
 
   .animation_header {
     font-size: 2.5em;
+    margin: 0.8em 0;
   }
 
   iframe {
@@ -727,9 +791,16 @@ hr {
     margin-right: 6%;
   }
 
-  .animation_left_collum {
-    width: 55%;
+  .icon_text {
+    margin-top: 5em;
   }
+
+  .icon_text {
+    font-size: 1em;
+    margin-top: 5em;
+    line-height: 1.5;
+  }
+
 
   .header {
     padding-top: 15%;
@@ -740,13 +811,20 @@ hr {
     font-size: 1em;
     margin-top: -3em;
   }
+  .animation_left_collum {
+    height: 130%;
+  }
 
   .video_production_youtube_text {
     font-size: 1em;
   }
 
   .video_production_header {
-    font-size: 3em;
+    font-size: 2.3em;
+    margin: 0.8em 0;
+  }
+  .video_productionn_right_collum {
+    height: 130%;
   }
 
   .animation_service {
@@ -774,16 +852,29 @@ hr {
     width: 10em;
   }
 
-  .contact_header {
-    font-size: 3em;
-  }
-  .contact_text {
-    font-size: 1.5em;
-  }
   .contact {
     height: 50%;
-    padding-top: 1.5em;
+    padding: 3em 5em 5em 5em;
   }
+  .contact_header {
+    font-size: 2em;
+  }
+  .contact_text {
+    font-size: 1em;
+    margin: 1em 0 -1em 0;
+  }
+  .see_more {
+    transform: scale(0.8);
+  }
+  .social_button {
+    width: 3em;
+    margin: 0 2em;
+  }
+  .footer {
+    padding: 2em;
+    height: 16%;
+  }
+
 
 }
 
@@ -791,41 +882,72 @@ hr {
 
 @media only screen and (max-width: 768px){
 
-  .sidebar_icon {
-    width: 50%;
+
+  .llogo {
+    width: 60%;
+    margin-bottom: 1em;
+    display: block;
   }
-  .nav_links {
-    margin-top: 0.45em;
-  }
-  .nav_link {
-    font-size: 0.6em;
-    margin: 0 2em 0 1em;
-  }
-  .nav_title {
-    font-size: 1em;
+  .mobile_sevices_text {
+    font-family: open sans;
+    font-size: 1.5em;
+    width: 60%;
   }
 
-  .header {
-    padding-top: 23%;
-    max-height: 73%;
-    width: 100%;
-    text-align: -webkit-center;
+  .the_services {
+    display: none;
   }
 
-  .grand_title {
-    font-size: 1em;
+  .mobile_sevices {
+    display: block;
     text-align: -webkit-center;
     margin: 0;
   }
 
+  .animation_header {
+    font-size: 3em;
+  }
+
+  .sidebar_icon {
+    width: 50%;
+  }
+  .nav {
+    width: 85.8%;
+    padding: 1em 3.8em 1em 3.8em;
+  }
+  .nav_links {
+    margin-top: 0.65em;
+  }
+  .nav_link {
+    font-size: 0.8em;
+    margin: 0 2em 0 1em;
+  }
+  .nav_title {
+    font-size: 1.5em;
+  }
+
+  .header {
+    padding-top: 27%;
+    height: 61%;
+  }
+  .into_buttons {
+    display: none;
+  }
+
+  .grand_title {
+    display: none;
+  }
   .sub_grand_title {
-      font-size: 3em;
-      text-align: -webkit-center;
+    display: none;
   }
 
   .service {
-    padding: 1em 0 1em 0;
+    padding: 3em 0 3em 0;
     overflow: hidden;
+  }
+  .service_header {
+    font-size: 2.5em;
+    margin: 0em;
   }
   .into_buttons {
     margin: 0;
@@ -851,39 +973,29 @@ hr {
     transform: scale(0.85);
   }
 
-  .animation_header {
-    font-size: 4em;
+  .collums {
+    display: block;
+    margin: 0;
+    max-width: 95%;
+    max-height: 100%;
+    text-align: center;
   }
 
-  .animation_youtube_header_link {
-    font-size: 2em;
+  .animation_header {
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 0;
   }
 
   .animation_right_collum {
-    width: 45%;
+    width: 100%;
+    display: none;
   }
-
-  .bio_header {
-    font-size: 4em;
-  }
-
-  .bio_text {
-    font-size: 1.2em;
-  }
-
-  .bio {
-    /* activate when ready */
-    /*background-position: 400px 0;*/
-  }
-
-  .footer_email_adress {
-    text-align: center;
-    font-size: 3.6em;
-    font-family: josefinSans;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    color: #cf6468;
-    margin-top: 5%;
+  .animation_left_collum {
+    flex: none;
+    height: 35em;
+    width: 100%;
+    max-width: inherit;
   }
 
   .social_button_twwiter {
@@ -893,6 +1005,54 @@ hr {
   .social_button_instaram {
     width: 10%;
   }
+
+  .social_button {
+    margin: 0 1em;
+  }
+  .contact {
+    padding-top: 5.5em;
+  }
+  .contact_header {
+    font-size: 4em;
+  }
+  .contact_text {
+    font-size: 1.5em;
+  }
+  .animation_s_paragraph {
+    display: none;
+  }
+  .animation {
+    height: 56%;
+    padding: 2em 8%;
+
+  }
+  .video_production {
+    height: 56%;
+    padding: 2em 8%;
+
+  }
+  .video_production_header {
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+  .video_s_paragraph {
+    display: none;
+  }
+  .video_production_left_collum {
+    display: none;
+  }
+  .video_productionn_right_collum {
+    flex: none;
+    height: 35em;
+    width: 100%;
+    max-width: inherit;
+  }
+  .footer {
+    padding: 2em;
+    height: auto;
+  }
+
 
 }
 
