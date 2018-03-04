@@ -3,12 +3,20 @@
 /* Background color #CBFFFB */
 /* Accent color #DF3E46 */
 
-/* Main.css By Jish Ernderson */
+/* Main.css By Jish Ernderson - GitHub */
 
 
 @font-face {
   font-family: 'Open Sans';
   src:  url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('TrueType'),
+}
+
+.grid {
+  background-image: url(../images/cs.png);
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -31,19 +39,20 @@ body {
 }
 
 .nav {
-  background-color: hsla(210, 47%, 06%, 0.5);
-  padding: 1em 5em 1em 5em;
+  padding: 1em 5em 1em 4em;
   position: fixed;
-  width: 94%;
+  width: -webkit-fill-available;
   z-index: 100;
+  text-align: center;
+  background-color: hsla(213, 18%, 5%, 0.5);
 }
 
 .nav_title {
-  color: #CBFFFB;
   font-family: Open Sans;
   font-size: 2em;
-  letter-spacing: 1;
   margin: 0;
+  width: 3em;
+  color: #ffffff;
   float: left;
 }
 
@@ -53,17 +62,14 @@ body {
 }
 
 .nav_link {
-  float: left;
-  color: rgba(203, 255, 251, 0.5);
+  color: hsla(0, 0%, 100%, 0.32);
   font-family: Open Sans;
   font-size: 1.3em;
-  letter-spacing: 1;
-  display: inline;
-  margin: 0 2em 0 2em;
+  letter-spacing: 3px;
+  margin: 0 0 0 3em;
   text-decoration: none;
   transition: 0.5s;
 }
-
 .nav_link:hover {
   color: #fff;
 }
@@ -73,7 +79,6 @@ body {
   font-family: Open Sans;
   font-size: 1.8em;
   letter-spacing: 1;
-  display: inline;
   text-decoration: none;
   transition: 0.5s;
 
@@ -102,12 +107,25 @@ body {
   display: none;
 }
 
-.llogo {
-  display: none;
+.logo {
+  width: 30%;
 
 }
 
+h1 {
 
+}
+h2 {
+
+}
+span {
+  font-size: 1.3em;
+  display: block;
+  font-family: Open Sans;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: hsl(177, 21%, 68%);
+}
 
 input {
   border-radius: 2em;
@@ -132,7 +150,11 @@ textarea {
 
 iframe {
   width: 100%;
-  height: 60%;
+  height: 550px;
+}
+
+.contact_card {
+  text-align: -webkit-center;
 }
 
 /* ----------------- HOME PAGE ----------------- */
@@ -143,21 +165,29 @@ iframe {
 .header {
   background-image: url(../images/a.jpg);
   background-size: cover;
-  height: 45%;
+  height: auto;
   background-attachment: fixed;
-  padding: 15% 5em;
+  padding: 10% 0;
   text-align: -webkit-center;
 }
 
+
+.llogo {
+  display: none;
+}
+
 .sub_grand_title {
+  margin: 1em;
+  width: 70%;
   font-size: 8em;
   text-align: center;
   margin-top: 0;
-  font-family: Open sans;
+  font-family: Open Sans;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #3EDFD7;
+  color: hsl(173, 100%, 90%);
   margin-bottom: -5px;
+  display: none;
 }
 
 hr {
@@ -168,15 +198,15 @@ hr {
   border-style: solid;
 }
 
+
 .grand_title {
   margin: 1em;
   font-size: 3em;
-  width: 50%;
   text-align: center;
   font-family: Open Sans;
   font-weight: 400;
   letter-spacing: 3px;
-  color: #CBFFFB;
+  color: hsl(177, 12%, 58%)
 }
 
 .into_buttons {
@@ -199,7 +229,7 @@ hr {
 
 .service_header {
   font-size: 5em;
-  font-family: Open sans;
+  font-family: Open Sans;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -227,7 +257,7 @@ hr {
   text-align: center;
   /* max-width: 50%; */
   font-size: 2em;
-  font-family: Open sans;
+  font-family: Open Sans;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -259,7 +289,7 @@ hr {
   text-align: center;
   /* max-width: 50%; */
   font-size: 2em;
-  font-family: Open sans;
+  font-family: Open Sans;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -289,11 +319,11 @@ hr {
 }
 .swap_button_learn:hover {
   background-image: url(../images/learnmorea.png);
-  transform: scale(0.65);
+  /*transform: scale(0.65);*/
 }
 .swap_button_learn:active {
   background-image: url(../images/learnmorea.png);
-  transform: scale(0.6);
+  /*transform: scale(0.6);*/
 }
 
 .swap_button_learn2 {
@@ -305,11 +335,11 @@ hr {
 }
 .swap_button_learn2:hover {
   background-image: url(../images/services_white.png);
-  transform: scale(0.65);
+  /*transform: scale(0.65);*/
 }
 .swap_button_learn2:active {
   background-image: url(../images/services_white.png);
-  transform: scale(0.6);
+  /*transform: scale(0.6);*/
 }
 
 .swap_button_contact {
@@ -321,18 +351,17 @@ hr {
 }
 .swap_button_contact:hover {
   background-image: url(../images/contactusa.png);
-  transform: scale(0.65);
+  /*transform: scale(0.65);*/
 }
 .swap_button_contact:active {
   background-image: url(../images/contactusa.png);
-  transform: scale(0.6);
+  /*transform: scale(0.6);*/
 }
 
 /* ::::::: ANIMATION ::::::: */
 
-
-
 .animation {
+
   background-color: #191E24;
   background-position: center;
   background-attachment: fixed;
@@ -345,7 +374,7 @@ hr {
 
 .animation_header {
     font-size: 5em;
-    font-family: Open sans;
+    font-family: Open Sans;
     font-weight: bold;
     letter-spacing: 2px;
     color: hsl(0, 0%, 100%);
@@ -353,38 +382,21 @@ hr {
 }
 
 .collums {
-  display: flex;
+  display: block;
   max-height: 60%;
+  text-align: -webkit-center;
+
 }
 
 .animation_left_collum {
-  flex: 2;
-  height: 100%;
-  max-width: 50%;
 }
 
 .animation_right_collum {
-  flex: 1;
-  text-align: -webkit-center;
-  max-width: 100%;
-  max-height: 60%;
-}
-
-.youtube_icon {
-  width: 45%;
   text-align: center;
-  transition: 0.3s;
-}
-.youtube_icon:hover {
-  transform: scale(1.05);
-}
 
-.icon_text {
-  vertical-align: top;
-  margin-left: 3%;
-  font-size: 0.9em;
-  margin-top: 5em;
-  line-height: 1.5
+}
+.icon_text{
+  text-align: -webkit-center;
 }
 
 .animation_youtube_text {
@@ -394,13 +406,11 @@ hr {
   color: #ffffff;
   line-height: 1.5;
   text-align: center;
-  width: 70%;
+  width: 80%;
 }
 
 
 /* ::::::: VIDEO PRODUCTION ::::::: */
-
-
 
 .video_production {
   background-color: #15191e;
@@ -414,7 +424,7 @@ hr {
 
 .video_production_header {
   font-size: 5em;
-  font-family: Open sans;
+  font-family: Open Sans;
   font-weight: bold;
   letter-spacing: 2px;
   color: #ffffff;
@@ -422,46 +432,16 @@ hr {
 }
 
 .video_production_left_collum {
-  flex: 1;
-  max-width: 100%;
-  max-height: 60%;
+  width: 80%;
+  text-align: -webkit-center;
+}
+.v_icon_text {
+  text-align: -webkit-center;
 }
 
 .video_productionn_right_collum {
-  flex: 2;
   text-align: center;
-  height: 100%;
-  max-width: 50%;
-}
 
-.youtube_icon {
-  width: 45%;
-  text-align: center;
-  transition: 0.3s;
-}
-.youtube_icon:hover {
-  transform: scale(1.05);
-}
-
-.v_icon_text {
-  margin-top: 6.5em;
-  line-height: 1.5;
-  font-size: 0.9em;
-}
-
-.video_production_youtube_header_link {
-  font-size: 3em;
-  font-family: Open Sans;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #3EDFD7;
-  margin-top: 0px;
-  transition: 0.3s;
-  line-height: 2;
-}
-
-.video_productionn_youtube_header_link:hover {
-  color: #CBFFFB;
 }
 
 .video_production_youtube_text {
@@ -470,13 +450,11 @@ hr {
   font-weight: lighter;
   color: #ffffff;
   line-height: 1.5;
+  text-align: -webkit-center;
+
 }
 
-
-
-
-
-/* ::::::: BIO ::::::: */
+/* ::::::: CONTACT ::::::: */
 
 
 
@@ -487,7 +465,7 @@ hr {
   /*background-size: 80%;*/
   background-size: cover;
   background-attachment: fixed;
-  padding: 10em;
+  padding: 3em;
   text-align: center;
 
 }
@@ -503,20 +481,21 @@ hr {
 }*/
 
 .contact_header {
-  font-size: 5em;
-  font-family: Open sans;
+  font-size: 2em;
+  font-family: Open Sans;
   font-weight: bold;
   letter-spacing: 2px;
-  color:  #3EDFD7;
+  color:  #ffffff;
   margin-bottom: 0em;
 }
 
 .contact_text {
-  font-size: 2em;
+  font-size: 1em;
   font-family: Open Sans;
   letter-spacing: 1px;
-  color: #CBFFFB;
+  color: #93a4b9;
   line-height: 1.5em;
+  width: 50%;
 }
 
 /* ::::::: FOOTER ::::::: */
@@ -550,13 +529,32 @@ hr {
   padding: 1em;
 }
 
-
 .social_button:hover {
   transform: scale(1.1);
   border-color: hsla(0, 0%, 100%, 0.5);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ::::::::::::::::::::::::::  SCREEN CALIBRATION  :::::::::::::::::::::   */
+
+
+
+
 
 /* LARGE LAPTOPS */
 
@@ -565,9 +563,7 @@ hr {
   .header {
     padding-top: 13%;
   }
-  .v_icon_text {
-        margin-top: 1.5em;
-  }
+
   .sub_grand_title {
     font-size: 70pt;
   }
@@ -588,14 +584,14 @@ hr {
 
   .grand_title {
     font-size: 270%;
-    width: 70%;
+    width: 45%;
   }
   .sub_grand_title {
     font-size: 60pt;
   }
   .grand_title {
     font-size: 20pt;
-    width: 50%;
+    /*width: 50%;*/
   }
   .video_img {
     width: 17em;
@@ -621,9 +617,12 @@ hr {
 
 @media only screen and (max-width: 1440px){
 
+  .llogo {
+    width: 30%;
+  }
 
   .nav {
-    padding: 0.7em 5em 0.7em 5em;
+    padding: 0.7em 2em 0.7em 5em;
   }
   .nav_title {
     font-size: 1.6em;
@@ -636,7 +635,7 @@ hr {
   }
 
   .header {
-    padding-top: 20%;
+    padding-top: 16%;
   }
 
   .swap_button_learn {
@@ -647,6 +646,17 @@ hr {
   }
   .sub_grand_title {
     font-size: 4em;
+    color: #c7dad8;
+  }
+  .grand_title {
+    font-size: 1em;
+    margin: 2em 0;
+  }
+  span {
+    color: #ffffff;
+    line-height: 46px;
+    margin-bottom: 14px;
+
   }
   .animation_header {
     margin-bottom: 0.5em;
@@ -694,14 +704,8 @@ hr {
     margin: 0;
   }
 
-
-  .grand_title {
-    font-size: 130%;
-  }
-
   .animation_youtube_text {
     font-size: 1.5em;
-    margin-left: 3em;
   }
 
   .video_production_youtube_text {
@@ -709,10 +713,10 @@ hr {
   }
 
   .into_buttons {
-    display: none;
+    display: block;
   }
   .scrolldown {
-    display: block;
+    display: none;
   }
 
   .contact {
@@ -773,8 +777,8 @@ hr {
   }
 
   iframe {
-    width: 110%;
-    height: 55%;
+    width: 100%;
+    height: 350px;
   }
 
   .animation {
@@ -788,16 +792,10 @@ hr {
     padding-top: 3%;
   }
   .collums {
-    margin-right: 6%;
-  }
-
-  .icon_text {
-    margin-top: 5em;
   }
 
   .icon_text {
     font-size: 1em;
-    margin-top: 5em;
     line-height: 1.5;
   }
 
@@ -809,7 +807,7 @@ hr {
 
   .animation_youtube_text {
     font-size: 1em;
-    margin-top: -3em;
+
   }
   .animation_left_collum {
     height: 130%;
@@ -854,7 +852,7 @@ hr {
 
   .contact {
     height: 50%;
-    padding: 3em 5em 5em 5em;
+    padding: 3em 5em 2em 5em;
   }
   .contact_header {
     font-size: 2em;
@@ -867,7 +865,7 @@ hr {
     transform: scale(0.8);
   }
   .social_button {
-    width: 3em;
+    width: 2em;
     margin: 0 2em;
   }
   .footer {
@@ -883,26 +881,43 @@ hr {
 @media only screen and (max-width: 768px){
 
 
+  span {
+    font-size: 1.3em;
+    display: block;
+    font-family: Open Sans;
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+    letter-spacing: 3px;
+    line-height: 2;
+    color: #E5B453;
+  }
+
   .llogo {
-    width: 60%;
+    width: 20%;
     margin-bottom: 1em;
     display: block;
   }
-  .mobile_sevices_text {
-    font-family: open sans;
+  /*.mobile_sevices_text {
+    font-family: Open Sans;
     font-size: 1.5em;
-    width: 60%;
-  }
+    width: 70%;
+  }*/
 
   .the_services {
     display: none;
   }
+  .service_header {
+    display: none;
+  }
+  .service {
+    display: none;
+  }
 
-  .mobile_sevices {
+  /*.mobile_sevices {
     display: block;
     text-align: -webkit-center;
     margin: 0;
-  }
+  }*/
 
   .animation_header {
     font-size: 3em;
@@ -920,14 +935,14 @@ hr {
   }
   .nav_link {
     font-size: 0.8em;
-    margin: 0 2em 0 1em;
+    margin: 0 0em 0 1em;
   }
   .nav_title {
     font-size: 1.5em;
   }
 
   .header {
-    padding-top: 27%;
+    padding-top: 17%;
     height: 61%;
   }
   .into_buttons {
@@ -935,10 +950,10 @@ hr {
   }
 
   .grand_title {
-    display: none;
+    /*display: none;*/
   }
   .sub_grand_title {
-    display: none;
+    /*display: none;*/
   }
 
   .service {
@@ -951,6 +966,10 @@ hr {
   }
   .into_buttons {
     margin: 0;
+  }
+
+  .contact_text {
+    width: 100%;
   }
 
   .video_production_service {
@@ -975,10 +994,10 @@ hr {
 
   .collums {
     display: block;
-    margin: 0;
+    margin: auto;
     max-width: 95%;
     max-height: 100%;
-    text-align: center;
+    text-align: -webkit-center;
   }
 
   .animation_header {
@@ -989,11 +1008,11 @@ hr {
 
   .animation_right_collum {
     width: 100%;
-    display: none;
+    display: block;
   }
   .animation_left_collum {
     flex: none;
-    height: 35em;
+    height: auto;
     width: 100%;
     max-width: inherit;
   }
@@ -1007,7 +1026,7 @@ hr {
   }
 
   .social_button {
-    margin: 0 1em;
+    margin: 0 0em;
   }
   .contact {
     padding-top: 5.5em;
@@ -1040,11 +1059,11 @@ hr {
     display: none;
   }
   .video_production_left_collum {
-    display: none;
+    display: block;
   }
   .video_productionn_right_collum {
     flex: none;
-    height: 35em;
+    height: auto;
     width: 100%;
     max-width: inherit;
   }
@@ -1062,24 +1081,39 @@ hr {
 @media only screen and (max-width: 425px){
 
 
+  body{
+    overflow-x: hidden;
+  }
+  .scrolldown {
+    display: none;
+  }
+
   .nav_title {
     font-size: 1.5em;
   }
-
   .nav_link {
-      font-size: 1em;
+    font-size: 1em;
   }
-
-
   .nav {
     width: 93%;
+    display: none;
+  }
+
+  .llogo {
+    width: 40%;
+    margin-bottom: 1em;
+    display: block;
   }
 
   .header {
-    width: 129%;
-    padding-top: 37%;
-    max-height: 59%;
-
+    width: initial;
+    padding: 20% 7%;
+    height: 90%;
+    background-image: "assets/images/a_copy.jpg";
+    background-color: #14212f;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   }
 
   .sub_grand_title {
@@ -1087,7 +1121,25 @@ hr {
   }
 
   .grand_title {
-    font-size: 5em;
+    font-size: 0.9em;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    letter-spacing: 2px;
+  }
+
+  .service {
+    display: none;
+  }
+
+  .mobile_sevices_text {
+    font-family: Open Sans;
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .collums {
+    max-width: 100%;
   }
 
   .illustrations {
@@ -1098,9 +1150,16 @@ hr {
     font-size: 3em;
   }
 
+  .video_production_youtube_text {
+    font-size: 0.7em;
+  }
+  .video_production_header {
+    font-size: 2em;
+  }
+
   .animation {
-    width: 119%;
-    height: 50%
+    width: initial;
+    height: 50%;
   }
 
   .animation_header {
@@ -1112,15 +1171,15 @@ hr {
   }
 
   .animation_left_collum {
-    width: 56%;
+    width: 100%;
   }
 
   iframe {
-    height: 60%;
+    height: 200px;
   }
 
   .animation_right_collum {
-    width: 43%;
+    width: 100%;
   }
 
   .youtube_icon {
@@ -1129,6 +1188,26 @@ hr {
 
   .animation_youtube_text {
     font-size: 0.6em;
+  }
+
+  .contact {
+    padding: 5em 0em;
+    text-align: -webkit-center;
+  }
+
+  .contact_header {
+    font-size: 2em;
+  }
+  .contact_card {
+    width: 90%;
+  }
+  .contact_text {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  .see_more {
+    margin: 0 -30px;
   }
 
   .bio {
@@ -1147,7 +1226,7 @@ hr {
   }
 
   .footer {
-      width: 119%;
+      width: initial;
   }
 
   .footer_email_adress {
@@ -1204,7 +1283,7 @@ hr {
   }
 
   .animation_youtube_text {
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .animation {

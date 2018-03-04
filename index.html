@@ -1,11 +1,14 @@
+<!DOCTYPE html>
+<!-- index.html By Sudojo GitHub - (https://github.com/sudojo)  -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Sudojo">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- I crossed this out because I figured a way to use it offline by copying it into assets/js/jquery.min.js -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+    <script src="assets/js/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
     <script>
     $(document).ready(function(){
@@ -37,11 +40,14 @@
   </head>
   <title>Zoofries</title>
   <body>
+    <!-- <div class=grid></div> -->
 
     <div class='nav'>
-      <h2 class='nav_title'>Zoofries</h2>
+
+      <h1 class=nav_title>Zoofries</h1>
 
       <div class='nav_links'>
+
         <a href='#home' class='nav_link'>
           HOME
         </a>
@@ -50,6 +56,9 @@
         </a>
         <a href='#animation' class='nav_link'>
           ANIMATION
+        </a>
+        <a href='#home'>
+          <h1 class='nav_title'></h1>
         </a>
         <a href='#video' class='nav_link'>
           VIDEO
@@ -64,17 +73,21 @@
     <!-- ////// HEADER /////// -->
 
     <div class='header' id=home>
+      <img src=assets/images/logo.png class=llogo>
+
 
       <h2 class='sub_grand_title'>
         Zoofries
       </h2>
-      <img src=assets/images/logo.png class=llogo>
+      <!-- <img src=assets/images/logo.png class=logo> -->
 
       <!-- <hr> -->
 
       <h1 class='grand_title'>
-         is a media production company that helps your business not only attract customers,
-         but create fans. We strive to find the best way to tell the story that’s unique
+
+         <span>Zoofries is a media production company</span> that helps your business not only attract customers,
+         but create fans
+          We strive to find the best way to tell the story that’s unique
          to you and your business.
       </h1>
 
@@ -100,13 +113,14 @@
     <!-- ////// SERVICES /////// -->
 
 
+
     <div class='service' id=service>
       <h1 class='service_header'>
         Our Services
       </h1>
       <div class=mobile_sevices>
         <p class="mobile_sevices_text">
-        Zoofries is a media production company that helps your
+        <span>Zoofries is a media production company</span> that helps your
         business not only attract customers, but create fans.
         We strive to find the best way to tell the story that’s
         unique to you and your business.</p>
@@ -172,11 +186,11 @@
             <br>
             <p class='animation_youtube_text'>
 
-              Nothing can catch someone’s<br>
-              attention quiet like an idea<br>
-              personified. A drawing is just<br>
-              that. Zoofries strives to create<br>
-              premier animation that’s full of<br>
+              Nothing can catch someone’s
+              attention quiet like an idea
+              personified. A drawing is just
+              that. Zoofries strives to create
+              premier animation that’s full of
               heart and soul.
             </p>
           </div>
@@ -192,7 +206,10 @@
       </h1>
 
       <div class=collums>
-        <!-- :::::: ANIMATION LEFT COLLUM ::::::: -->
+
+        <div class='video_productionn_right_collum'>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IhAvfiIZuZg" frameborder="0" allowfullscreen></iframe>
+        </div>
 
         <div class='video_production_left_collum'>
           <!-- <a href='https://www.youtube.com/user/zoofries'><img src='assets/images/ColorFries@2x.png' class='youtube_icon'></a> -->
@@ -202,21 +219,16 @@
             </a> -->
             <br>
             <p class='video_production_youtube_text'>
-              Video posts preform better than<br>
-              any other format to attract customers<br>
-              to your brand, but we want to do even<br>
-              better. We create stories that put your<br>
-              business in the best possible light. We<br>
+              Video posts preform better than
+              any other format to attract customers
+              to your brand, but we want to do even
+              better. We create stories that put your
+              business in the best possible light. We
               give you media you can be proud of.
             </p>
           </div>
         </div>
 
-        <!-- :::::: ANIMATION RIGHT COLLUM ::::::: -->
-
-        <div class='video_productionn_right_collum'>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/IhAvfiIZuZg" frameborder="0" allowfullscreen></iframe>
-        </div>
       </div>
     </div>
 
@@ -232,9 +244,9 @@
           Contact us
         </h1>
         <p class='contact_text'>
-          Like Batman, we are poised ready<br>
-          to answer our red blinking phone.<br>
-          If you require video, animation,<br>
+          Like Batman, we are poised ready
+          to answer our red blinking phone.
+          If you require video, animation,
           or art; we’re your huckleberry.
         </p>
 
