@@ -7,8 +7,8 @@
 
 
 @font-face {
+  font-family: 'Roboto Slab', serif;
   font-family: 'Open Sans';
-  src:  url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('TrueType'),
 }
 
 .grid {
@@ -32,7 +32,7 @@ body {
 
 .heading5 {
   color: #cf6468;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-size: 20pt;
   letter-spacing: 1
 
@@ -48,7 +48,7 @@ body {
 }
 
 .nav_title {
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-size: 2em;
   margin: 0;
   width: 3em;
@@ -76,7 +76,7 @@ body {
 
 .lable {
   color: #191E24;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-size: 1.8em;
   letter-spacing: 1;
   text-decoration: none;
@@ -121,7 +121,7 @@ h2 {
 span {
   font-size: 1.3em;
   display: block;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bolder;
   letter-spacing: 3px;
   color: hsl(177, 21%, 68%);
@@ -163,8 +163,8 @@ iframe {
 /* ::::::: HEADER ::::::: */
 
 .header {
-  background-image: url(../images/a.jpg);
-  background-size: cover;
+  background-image: url(https://source.unsplash.com/collection/2207799/landers);
+  background-size: cover;;
   height: auto;
   background-attachment: fixed;
   padding: 10% 0;
@@ -182,7 +182,7 @@ iframe {
   font-size: 8em;
   text-align: center;
   margin-top: 0;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bold;
   letter-spacing: 2px;
   color: hsl(173, 100%, 90%);
@@ -206,7 +206,7 @@ hr {
   font-family: Open Sans;
   font-weight: 400;
   letter-spacing: 3px;
-  color: hsl(177, 12%, 58%)
+  color: #dcdcdc;
 }
 
 .into_buttons {
@@ -229,7 +229,7 @@ hr {
 
 .service_header {
   font-size: 5em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -257,7 +257,7 @@ hr {
   text-align: center;
   /* max-width: 50%; */
   font-size: 2em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -266,7 +266,7 @@ hr {
 .video_s_paragraph {
   text-align: center;
   font-size: 2em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   letter-spacing: 3px;
   font-variant-caps: all-petite-caps;
   color: hsla(213, 18%, 12%, 0.65);
@@ -289,7 +289,7 @@ hr {
   text-align: center;
   /* max-width: 50%; */
   font-size: 2em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -298,7 +298,7 @@ hr {
 .animation_s_paragraph {
   text-align: center;
   font-size: 2em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   letter-spacing: 3px;
   font-variant-caps: all-petite-caps;
   color: hsla(213, 18%, 12%, 0.65);
@@ -374,7 +374,7 @@ hr {
 
 .animation_header {
     font-size: 5em;
-    font-family: Open Sans;
+    font-family: Roboto Slab;
     font-weight: bold;
     letter-spacing: 2px;
     color: hsl(0, 0%, 100%);
@@ -401,7 +401,7 @@ hr {
 
 .animation_youtube_text {
   font-size: 2.5em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: lighter;
   color: #ffffff;
   line-height: 1.5;
@@ -424,7 +424,7 @@ hr {
 
 .video_production_header {
   font-size: 5em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bold;
   letter-spacing: 2px;
   color: #ffffff;
@@ -446,7 +446,7 @@ hr {
 
 .video_production_youtube_text {
   font-size: 2.5em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: lighter;
   color: #ffffff;
   line-height: 1.5;
@@ -459,7 +459,7 @@ hr {
 
 
 .contact {
-  background-image: url(../images/Mrr.jpg);
+  background-image: url(https://source.unsplash.com/collection/2207633/vintage-phones);
   /*background-position: 738px 0;*/
   background-repeat: no-repeat;
   /*background-size: 80%;*/
@@ -482,7 +482,7 @@ hr {
 
 .contact_header {
   font-size: 2em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: bold;
   letter-spacing: 2px;
   color:  #ffffff;
@@ -491,9 +491,9 @@ hr {
 
 .contact_text {
   font-size: 1em;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   letter-spacing: 1px;
-  color: #93a4b9;
+  color: #dcdcdc;
   line-height: 1.5em;
   width: 50%;
 }
@@ -511,7 +511,7 @@ hr {
 .footer_email_adress {
   text-align: center;
   font-size: 55pt;
-  font-family: Open Sans;
+  font-family: Roboto Slab;
   font-weight: lighter;
   letter-spacing: 2px;
   color: #cf6468;
@@ -884,7 +884,7 @@ hr {
   span {
     font-size: 1.3em;
     display: block;
-    font-family: Open Sans;
+    font-family: Roboto Slab;
     font-weight: bolder;
     margin-bottom: 0.5em;
     letter-spacing: 3px;
@@ -898,7 +898,7 @@ hr {
     display: block;
   }
   /*.mobile_sevices_text {
-    font-family: Open Sans;
+    font-family: Roboto Slab;
     font-size: 1.5em;
     width: 70%;
   }*/
@@ -1133,7 +1133,7 @@ hr {
   }
 
   .mobile_sevices_text {
-    font-family: Open Sans;
+    font-family: Roboto Slab;
     font-size: 1em;
     width: 80%;
   }
