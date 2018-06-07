@@ -4,12 +4,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Sudojo">
+    <meta name="author" content="Joshua Anderson">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120526464-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120526464-1');
+    </script>
+
     <!-- I crossed this out because I figured a way to use it offline by copying it into assets/js/jquery.min.js -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
     <script src="assets/js/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/Pjquery.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
     <script>
     $(document).ready(function(){
@@ -84,7 +97,7 @@
 
       <!-- <hr> -->
 
-      <h1 class='grand_title'>
+      <h1 class='grand_title' class="parallax-window" data-parallax="scroll" >
 
          <span>Zoofries is a media production company</span> that helps your business not only attract customers,
          but create fans
