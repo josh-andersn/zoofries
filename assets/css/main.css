@@ -2,8 +2,8 @@
 /* Main.css By Josh Anderson - GitHub */
 
 @font-face {
-  font-family: 'Roboto Slab', serif;
-  font-family: 'Open Sans';
+  font-family: 'Avenir next', serif;
+  font-family: 'Avenir next\\';
 }
 
 .grid {
@@ -27,24 +27,24 @@ body {
 
 .heading5 {
   color: #cf6468;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-size: 20pt;
   letter-spacing: 1
 
 }
 
 .nav {
-  padding: 1em 5em 1em 4em;
+  padding: 1em 5em;
   position: fixed;
   width: -webkit-fill-available;
   z-index: 100;
   text-align: center;
-  background-color: hsla(213, 18%, 5%, 0.5);
+  background-color: #373C47;
 }
 
 .nav_title {
-  font-family: Roboto Slab;
-  font-size: 2em;
+  font-family: Avenir;
+  font-size: 1.6em;
   margin: 0;
   width: 3em;
   color: #ffffff;
@@ -52,26 +52,30 @@ body {
 }
 
 .nav_links {
-  margin-top: 1.6em;
+  margin-top: 0.5em;
   float: right;
 }
 
 .nav_link {
   color: hsla(0, 0%, 100%, 0.32);
-  font-family: Open Sans;
-  font-size: 1.1em;
+  font-family: Avenir;
+  font-size: 1em;
   letter-spacing: 3px;
   margin: 0 0 0 2em;
   text-decoration: none;
   transition: 0.5s;
 }
+
+
+
+
 .nav_link:hover {
   color: #fff;
 }
 
 .lable {
   color: #191E24;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-size: 1.8em;
   letter-spacing: 1;
   text-decoration: none;
@@ -116,10 +120,10 @@ h2 {
 span {
   font-size: 1.3em;
   display: block;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: bolder;
   letter-spacing: 3px;
-  color: #fff;
+  color: #373C47;
 }
 
 input {
@@ -179,14 +183,14 @@ a {
 
 .sub_grand_title {
   margin: 1em;
-  width: 70%;
-  font-size: 8em;
+  width: 100%;
+  font-size: 10em;
   text-align: center;
   margin-top: 0;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #eee;
+  color: #373C47;
   margin-bottom: -5px;
   display: none;
 }
@@ -204,10 +208,10 @@ hr {
   margin: 1em;
   font-size: 3em;
   text-align: center;
-  font-family: Open Sans;
+  font-family: Avenir;
   font-weight: 400;
   letter-spacing: 3px;
-  color: #dcdcdc;
+  color: #373C47;
 }
 
 .into_buttons {
@@ -226,15 +230,19 @@ hr {
   background-size: cover;
   padding: 1em 8% 1em 8%;
   text-align: center;
+  border: hidden;
+  border-top-style: solid;
+  border-width: thick;
+  border-color: hsl(182, 42%, 44%);
 }
 
 .service_header {
-  font-size: 5em;
-  font-family: Roboto Slab;
+  font-size: 4em;
+  font-family: Avenir;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .the_services {
@@ -258,7 +266,7 @@ hr {
   text-align: center;
   /* max-width: 50%; */
   font-size: 2em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -267,7 +275,7 @@ hr {
 .video_s_paragraph {
   text-align: center;
   font-size: 2em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   letter-spacing: 3px;
   font-variant-caps: all-petite-caps;
   color: hsla(213, 18%, 12%, 0.65);
@@ -290,7 +298,7 @@ hr {
   text-align: center;
   /* max-width: 50%; */
   font-size: 2em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: bold;
   letter-spacing: 2px;
   color: #191E24;
@@ -299,7 +307,7 @@ hr {
 .animation_s_paragraph {
   text-align: center;
   font-size: 2em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   letter-spacing: 3px;
   font-variant-caps: all-petite-caps;
   color: hsla(213, 18%, 12%, 0.65);
@@ -374,8 +382,8 @@ hr {
 }
 
 .animation_header {
-    font-size: 5em;
-    font-family: Roboto Slab;
+    font-size: 3em;
+    font-family: Avenir;
     font-weight: bold;
     letter-spacing: 2px;
     color: hsl(0, 0%, 100%);
@@ -397,7 +405,7 @@ hr {
 }
 
 .animation_right_collum {
-  margin-left: 20em;
+  margin-left: 31em;
 }
 .icon_text{
   text-align: left;
@@ -405,7 +413,7 @@ hr {
 
 .animation_youtube_text {
   font-size: 1.5em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: lighter;
   color: #ffffff;
   line-height: 1.5;
@@ -429,8 +437,8 @@ hr {
 }
 
 .video_production_header {
-  font-size: 5em;
-  font-family: Roboto Slab;
+  font-size: 3em;
+  font-family: Avenir;
   font-weight: bold;
   letter-spacing: 2px;
   color: hsl(0, 0%, 100%);
@@ -439,7 +447,7 @@ hr {
 }
 
 .video_production_left_collum {
-  margin-right: 7em;
+  margin-right: 11em;
   text-align:  right;
 }
 
@@ -453,7 +461,7 @@ hr {
 
 .video_production_youtube_text {
   font-size: 1.5em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: lighter;
   color: #ffffff;
   line-height: 1.5;
@@ -491,7 +499,7 @@ hr {
 
 .contact_header {
   font-size: 2em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: bold;
   letter-spacing: 2px;
   color:  #ffffff;
@@ -500,7 +508,7 @@ hr {
 
 .contact_text {
   font-size: 1em;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   letter-spacing: 1px;
   color: #dcdcdc;
   line-height: 1.5em;
@@ -520,7 +528,7 @@ hr {
 .footer_email_adress {
   text-align: center;
   font-size: 55pt;
-  font-family: Roboto Slab;
+  font-family: Avenir;
   font-weight: lighter;
   letter-spacing: 2px;
   color: #cf6468;
@@ -650,13 +658,13 @@ hr {
   }
 
   .nav {
-    padding: 0.7em 2em 0.7em 5em;
+    padding: 1em 5em;
   }
   .nav_title {
     font-size: 1.6em;
   }
   .nav_links {
-    margin-top: 0.2em;
+    margin-top: 0.5em;
   }
   .nav_link {
     font-size: 1em;
@@ -677,17 +685,15 @@ hr {
     color: #c7dad8;
   }
   .grand_title {
-    font-size: 1em;
+    font-size: 1.4em;
     margin: 2em 0;
   }
   span {
-    color: #ffffff;
+    color: #373C47;
     line-height: 46px;
     margin-bottom: 14px;
 
   }
-
-
 
   .video_img {
     width: 15em;
@@ -813,7 +819,6 @@ hr {
     text-align:  left;
     padding: 4px;
     padding-left:  0em;
-    /* background-color: #2d303a; */
   }
 
   iframe {
@@ -939,12 +944,12 @@ hr {
   span {
     font-size: 1.3em;
     display: block;
-    font-family: Roboto Slab;
+    font-family: Avenir;
     font-weight: bolder;
     margin-bottom: 0.5em;
     letter-spacing: 3px;
     line-height: 2;
-    color: #fff;
+    color: #373C47;
   }
 
   .llogo {
@@ -953,7 +958,7 @@ hr {
     display: block;
   }
   .mobile_sevices_text {
-    font-family: Roboto Slab;
+    font-family: Avenir;
     font-size: 1.5em;
     width: 70%;
   }
@@ -1019,7 +1024,7 @@ hr {
   .nav {
     width: 85.8%;
     padding: 1em 3.8em 1em 3.8em;
-    background-color: hsl(182, 42%, 44%);
+    background-color: #373C47;
   }
   .nav_links {
     margin-top: 0.65em;
@@ -1232,7 +1237,7 @@ hr {
   }
 
   .mobile_sevices_text {
-    font-family: Roboto Slab;
+    font-family: Avenir;
     font-size: 1em;
     width: 80%;
   }
