@@ -1,334 +1,96 @@
 <!DOCTYPE html>
-
-<!-- index.html By Josh Anderson GitHub - (https://github.com/sudojo)  -->
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Joshua Anderson">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KBZR5BQ');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120526464-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-120526464-1');
-    </script>
-
-    <!-- I crossed this out because I figured a way to use it offline by copying it into assets/js/jquery.min.js -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/Pjquery.min.js"></script>
-    <script src="assets/js/parallax.js"></script>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-    <!-- Smooth scrolling script start. -->
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
-    </script>
-    <!-- Smooth scrolling script Stop -->
-
-
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <!-- Animate on scroll effects library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Zoofries</title>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBZR5BQ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- <div class=grid></div> -->
+</head>
+<body>
 
-    <div class='nav'>
+  <!-- Navigation Bar -->
+  <div class="nav_bar">
 
-      <h1 class=nav_title><a href=index.html>Zoofries</a></h1>
-
-      <div class='nav_links'>
-
-        <a href='#home' class='nav_link'>
-          HOME
-        </a>
-        <a href='#service' class='nav_link'>
-          SERVICE
-        </a>
-        <a href='#animation' class='nav_link'>
-          ANIMATION
-        </a>
-        <a href='#home'>
-          <h1 class='nav_title'></h1>
-        </a>
-        <a href='#video' class='nav_link'>
-          VIDEO
-        </a>
-        <a href='#contact' class='nav_link'>
-          CONTACT
-        </a>
-      </div>
-
+    <!-- top left Title -->
+    <div data-aos="flip-right" class="nav_title"><a class="nav_title" href="index.html"><h2>Zoofries</h2><img class="main_logo" src="images/zoofries_logo.png" alt="zoofries logo"></a></div>
+    <!-- <div class="main_logo"><img src="images/main_logo.png" alt="Main logo"></div> -->
+    <!-- Top Right Navigation -->
+    <div class="nav_buttons">
+      <h3 data-aos="flip-left" class="nav_clicks"><a href="#contact_screen">Contact</a></h3>
+      <h3 data-aos="flip-left" class="nav_clicks"><a href="#video_screen">Video</a></h3>
+      <h3 data-aos="flip-left" class="nav_clicks"><a href="#animation_screen">Animation</a></h3>
     </div>
 
-    <!-- ////// HEADER /////// -->
-
-    <div class='header' id=home>
-      <img src=assets/images/logo.png class=llogo>
-
-      <h2 class='sub_grand_title'>
-        Zoofries
-      </h2>
-      <!-- <img src=assets/images/logo.png class=logo> -->
-
-      <!-- <hr> -->
-
-      <h1 class='grand_title' class="parallax-window" data-parallax="scroll" >
-
-         <span>Zoofries is a media production company</span> that helps your business not only attract customers,
-         but create fans
-          We strive to find the best way to tell the story that’s unique
-         to you and your business.
-      </h1>
-
-      <div class=scrolldown>
-        <img src=assets/images/scrolldown.png>
-      </div>
-
-      <div class='into_buttons'>
-        <div class='see_more'>
-          <a href='#service'>
-            <div class='swap_button_learn'></div>
-          </a>
-        </div>
-        <div class='see_more'>
-          <a href='#contact'>
-            <div class='swap_button_contact'></div>
-          </a>
-        </div>
-      </div>
   </div>
 
 
-    <!-- ////// SERVICES /////// -->
+  <!-- Landing Screen -->
+  <div data-aos="fade-in" class="landing_screen">
+
+    <h1 data-aos="slide-right" class="landing_header_text">Media, Art, and Animation.</h1>
+    <img data-aos="fade-right" class=quote src="images/quote_line.svg" alt="quoteline">
+    <p data-aos="fade-left" class="landing_body_text">We help your business not only attract customers, but create fans. We strive to find the best way to tell the story that’s unique to you and your business.</p>
+    <!-- Hire Us Button -->
+    <a href="#"><img class="landing_buttons" data-aos="fade-up" src="images/hire_us_button.svg" alt="hire us"></a>
+    <!-- See more button -->
+    <a href="#video_screen"><img class="landing_buttons" data-aos="fade-up" src="images/see_more_button.svg" alt="see more"></a>
+
+   </div>
 
 
+  <!-- Video Screen -->
+  <div class="video_screen">
 
-    <div class='service' id=service>
-      <h1 class='service_header'>
-        Our Services
-      </h1>
-      <div class=mobile_sevices>
-        <p class="mobile_sevices_text">
-        <span>Zoofries is a media production company</span> that helps your
-        business not only attract customers, but create fans.
-        We strive to find the best way to tell the story that’s
-        unique to you and your business.</p>
-
-      </div>
-      <div class=the_services>
-        <div class=animation_service>
-          <img class='animation_img' src='assets/images/Animation.png'>
-          <h2 class=animation_s_heading>
-            Animation
-          </h2>
-          <p class=animation_s_paragraph>
-            Pencil Magic
-          </p>
-          <div class='see_more' id=yo>
-            <a href='#animation'>
-              <div class='swap_button_learn2'></div>
-            </a>
-          </div>
-        </div>
-
-        <div class=video_production_service>
-          <img class='video_img' src='assets/images/video.png'>
-          <h2 class=video_s_heading>
-            Video Production
-          </h2>
-          <p class=video_s_paragraph>
-            Camera magic
-          </p>
-          <div class='see_more' id=yo>
-            <a href='#video'>
-              <div class='swap_button_learn2'></div>
-            </a>
-          </div>
-        </div>
-      </div>
-
+    <img data-aos="fade-right" class="video_splash" src="images/video_splash.svg" alt="video splash">
+    <div class="video_left_selection">
+    <h1 data-aos="fade-left" class="video_header_text">Video posts preform the best.</h1>
+    <p data-aos="fade-left" class="video_body_text">to attract customers to your brand, but we want to do even better. We give you media you can be proud of.</p>
+    <!-- Video youtube button -->
+    <a href="#"><img data-aos="fade-up" class="our_work" src="images/our_work.svg" alt="our work"></a>
     </div>
 
-    <!-- ////// ANIMATION /////// -->
+  </div>
 
 
-    <div class='animation' id=animation>
-      <h1 class='animation_header' >
-        Animation
-      </h1>
-      <div class=collums>
+  <!-- Animation Screen -->
+  <div class="animation_screen">
 
-        <!-- :::::: ANIMATION LEFT COLLUM ::::::: -->
 
-        <div class='animation_left_collum'>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RSueCVel1oc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-
-        <!-- :::::: ANIMATION RIGHT COLLUM ::::::: -->
-
-        <div class='animation_right_collum'>
-          <!-- <a href='https://www.youtube.com/user/zoofries'><img src='assets/images/ColorFries@2x.png' class='youtube_icon'></a> -->
-          <div class='icon_text'>
-            <!-- <a  href='https://www.youtube.com/user/zoofries' class='animation_youtube_header_link'>
-              Zoofries Youtube
-            </a> -->
-            <br>
-            <p class='animation_youtube_text'>
-
-              Nothing can catch someone’s
-              attention quiet like an idea
-              personified. A drawing is just
-              that. Zoofries strives to create
-              premier animation that’s full of
-              heart and soul.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div data-aos="fade-up" class="animation_selection">
+    <h1 class="animation_header_text">Nothing catches attention like an Idea Personified.</h1>
+    <p class="animation_body_text">And a drawing is just that. Zoofries strives to create premier animation that’s full of heart and soul.</p>
     </div>
+    <img data-aos="fade-up" class="animation_splash" src="images/animation_splash.svg" alt="animation splash">
+    <br>
+    <!-- Animation youtube button -->
+    <a href="#"><img data-aos="fade-up" class="our_work" src="images/our_work.svg" alt="our work"></a>
 
-    <!-- //////// VEDIO PRODUCTION \\\\\\\\ -->
-
-    <div class='video_production' id=video>
-      <h1 class='video_production_header'>
-        Video Production
-      </h1>
-
-      <div class=collums>
-
-        <div class='video_productionn_right_collum'>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/IhAvfiIZuZg" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class='video_production_left_collum'>
-          <!-- <a href='https://www.youtube.com/user/zoofries'><img src='assets/images/ColorFries@2x.png' class='youtube_icon'></a> -->
-          <div class='v_icon_text'>
-            <!-- <a  href='https://www.youtube.com/user/zoofries' class='animation_youtube_header_link'>
-              Zoofries Youtube
-            </a> -->
-            <br>
-            <p class='video_production_youtube_text'>
-              Video posts preform better than
-              any other format to attract customers
-              to your brand, but we want to do even
-              better. We create stories that put your
-              business in the best possible light. We
-              give you media you can be proud of.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
+  </div>
 
 
+  <!-- Contact Screen -->
+  <div class="contact_screen">
+
+    <h1 data-aos="fade-left"  class="contact_header_text">Contact us.</h1>
+    <p data-aos="fade-up"  class="contact_body_text">Like Batman, we are poised ready to answer our red blinking phone. If you require video, animation, or art; we’re your huckleberry.</p>
+    <!-- email information -->
+    <a href="isaac@zoofries.com"><img data-aos="fade-up"  class="email" src="images/email.svg" alt="email"></a>
+    <br>
+    <!-- phone number information -->
+    <a href="#"><img data-aos="fade-up"  class="phone_number" src="images/phone_number.svg" alt="phone number"></a>
 
 
-    <!-- ////// Contact /////// -->
-
-    <div class='contact' id=contact>
-
-      <div class=contact_card>
-        <h1 class='contact_header'>
-          Contact us
-        </h1>
-        <p class='contact_text'>
-          Like Batman, we are poised ready
-          to answer our red blinking phone.
-          If you require video, animation,
-          or art; we’re your huckleberry.
-        </p>
+  </div>
 
 
-        <div class='see_more'>
-          <a href="javascript:void( window.open( 'https://form.jotform.com/72955261784164', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">
-            <div class='swap_button_contact'></div>
-          </a>
-        </div>
+</body>
 
+<script>
+  AOS.init();
+</script>
 
-        <!-- <form method="POST" name="contactform" action="contact-form-handler.php">
-          <p>
-          <label for='name' class="lable">Your Name:</label> <br>
-          <input type="text" name="name">
-          </p>
-          <p>
-          <label for='email' class="lable">Email Address:</label> <br>
-          <input type="text" name="email"> <br>
-          </p>
-          <p>
-          <label for='message' class="lable">Message:</label> <br>
-          <textarea name="message"></textarea>
-          </p>
-          <input type="submit" value="Submit" class=submitten><br>
-        </form> -->
-      </div>
-
-    </div>
-
-    <!-- ////// FOOTER /////// -->
-
-
-    <div class='footer'>
-
-      <a href='https://www.instagram.com/zoofries/' class='ancor_with_no_decoration'>
-        <img src='assets/images/instagramIcon.png' class='social_button'>
-      </a> <!-- Instagram Link -->
-
-      <a href='https://twitter.com/zoofries' class='ancor_with_no_decoration'>
-        <img src='assets/images/twitterIcon.png' class='social_button'>
-      </a> <!-- Twitter Link -->
-
-      <a href='https://youtube.com/zoofries' class='ancor_with_no_decoration'>
-        <img src='assets/images/youtubew.png' class='social_button'>
-      </a> <!-- Twitter Link -->
-
-      <!-- <a href='https://facebook.com/zoofries' class='ancor_with_no_decoration'>
-        <img src='assets/images/facebookw.png' class='social_button'>
-      </a> -->
-
-    </div>
-
-
-
-  </body>
 </html>
