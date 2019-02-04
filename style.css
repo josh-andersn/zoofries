@@ -1,5 +1,7 @@
 @font-face {
   font-family: 'Futura', serif;
+  src:  url('fonts/Futura.ttf') format('TrueType'),
+
 }
 
 
@@ -17,7 +19,8 @@ a {
 
 h1 {
   color: #758CF4;
-  font-family: Futura;
+  font-family: futura;
+  font-weight: bold;
   font-size: 30pt;
   line-height: 31pt
 }
@@ -50,6 +53,12 @@ h3 {
 }
 
 .main_logo {
+  margin: 0.4em 0em 0px 0;
+  width: 4em;
+}
+
+.main_logo_white {
+  display: none;
   margin: 0.4em 0em 0px 0;
   width: 4em;
 }
@@ -210,39 +219,130 @@ h3 {
 
 @media only screen and (max-width: 900px){
 
+  body {
 
-  .landing_screen {
-    width: auto;
-    height: 120%;
-    background-image: url("images/landing_screen_backdrop.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 870px;
-    padding: 5em;
   }
 
-  .landing_header_text {
-    width: 9em;
-    margin-bottom: 1em;
+
+  .nav_bar {
+    text-align: center;
+    width: -webkit-fill-available;
+
+  }
+
+  .nav_title {
+    color: #eff0f2;
+    margin: 0em auto;
+    width: -webkit-fill-available;
+  }
+
+  /* switch the dark with the light logo */
+  .main_logo {
+    display: none;
+  }
+  .main_logo_white {
+    display: block;
+  }
+
+  .nav_buttons {
+    display: none;
+  }
+
+  .landing_screen {
+    background-image: url("images/landing_screen_backdrop_mobile.svg");
+    background-size: auto;
+    background-position: top;
+    padding: 17em 0em;
+    text-align: center;
   }
 
   .quote {
-    height: 5.5em;
-    position: absolute;
+    display: none;
+  }
+
+  .landing_header_text {
+     margin: 0.5em auto;
+  }
+
+  .quote {
+
   }
 
   .landing_body_text {
-    width: 25em;
-    font-weight: bold;
-    margin: 0 0 2em 2em;
+    margin: 1em auto;
   }
 
   .landing_buttons {
-    width: 8em;
-    margin-right: 1em;
+    margin: inherit auto;
+  }
+
+  .video_screen {
+    display: block;
+    background-image: url(images/animation_backdrop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .video_splash {
+    width: 10em;
+    margin: 1em auto;
+  }
+
+  .video_left_selection {
+    margin: 0em auto 1em auto;
+
+  }
+
+  .video_header_text {
+    font-size: 23pt;
+    margin: 1em auto 0.5em auto;
+  }
+
+  .video_body_text {
+    margin: 0em auto 1.5em auto;
+
+  }
+
+  .animation_screen {
+    padding: 10em 1em;
+    text-align: center;
+  }
+
+  .animation_header_text {
+    font-size: 20pt;
+    margin: 1em auto;
+    width: auto;
+  }
+
+  .animation_body_text {
+    margin: 1em auto;
+    font-size: 15pt;
+    width: auto;
+  }
+
+  .animation_splash {
+    width: 16em;
   }
 
 
+  .contact_screen {
+    padding: 10em 1em;
+    text-align: center;
+    background-image: url(images/contact_backdrop_mobile.svg);
+  }
+
+  .contact_header_text {
+    margin: 1em auto;
+    width: auto;
+  }
+
+  .contact_body_text {
+    margin: 3em auto;
+    width: 80%;
+  }
 
 
 
